@@ -32,7 +32,11 @@ doctype_js = {
     "Task" : "public/js/task.js",
     "Project" : "public/js/project.js",
     "Sales Invoice" : "public/js/sales_invoice.js",
-    "Maintenance Visit" : "public/js/maintenance_visit.js"
+    "Sales Invoice Timesheet" : "public/js/sales_invoice_timesheets.js",
+    "Maintenance Visit" : "public/js/maintenance_visit.js",
+    "Event" : "public/js/event.js",
+    "Item" : "public/js/item.js",
+    "Customer" : "public/js/customer.js"
 }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
@@ -127,3 +131,7 @@ doctype_js = {
 # 	"frappe.desk.doctype.event.event.get_events": "it_management.event.get_events"
 # }
 
+override_doctype_dashboards = {
+    "Event": "it_management.event.get_dashboard_data",
+    "Contact": "it_management.contact.get_dashboard_data"
+}
