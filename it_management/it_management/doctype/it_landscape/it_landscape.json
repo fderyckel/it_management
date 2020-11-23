@@ -1,40 +1,32 @@
 {
- "autoname": "Prompt",
- "creation": "2018-10-17 08:51:31.696729",
+ "autoname": "format:{title}-L{##}",
+ "creation": "2020-11-10 10:05:10.349031",
  "doctype": "DocType",
- "document_type": "System",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "domain_name",
-  "configuration_item",
-  "it_landscape"
+  "title",
+  "customer"
  ],
  "fields": [
   {
-   "default": "kundendomain.tld",
-   "fieldname": "domain_name",
+   "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Domain name"
+   "label": "Title",
+   "unique": 1
   },
   {
-   "fieldname": "configuration_item",
+   "fieldname": "customer",
    "fieldtype": "Link",
-   "label": "Configuration Item",
-   "options": "Configuration Item"
-  },
-  {
-   "fieldname": "it_landscape",
-   "fieldtype": "Link",
-   "label": "IT Landscape",
-   "options": "IT Landscape"
+   "label": "Customer",
+   "options": "Customer"
   }
  ],
- "modified": "2020-11-15 17:41:43.508517",
+ "modified": "2020-11-16 08:28:32.024253",
  "modified_by": "wolfram.schmidt@tueit.de",
  "module": "IT Management",
- "name": "Host Domain",
- "owner": "wolfram.schmidt@tueit.de",
+ "name": "IT Landscape",
+ "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
